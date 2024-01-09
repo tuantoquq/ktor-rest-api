@@ -1,0 +1,8 @@
+openapi: "3.0.3"
+info:
+  title: "ktor_rest_api API"
+  description: "ktor_rest_api API"
+  version: "1.0.0"
+servers:
+- url: "https://ktor_rest_api"
+paths: {}
