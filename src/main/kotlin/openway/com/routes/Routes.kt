@@ -8,4 +8,5 @@ fun Application.routes() {
     authRoute(get())
     userRoutes(get())
     openapiRoute()
+    testMailerRoute(get())
 }

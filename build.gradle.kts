@@ -5,6 +5,7 @@ val logback_version: String by project
 plugins {
     kotlin("jvm") version "1.9.22"
     id("io.ktor.plugin") version "2.3.7"
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.22"
 }
 
 group = "openway.com"
@@ -41,6 +42,14 @@ dependencies {
     implementation("com.zaxxer:HikariCP:5.0.1")
     implementation("io.insert-koin:koin-ktor:3.5.3")
     implementation("redis.clients:jedis:5.1.0")
+    implementation("com.mailersend:java-sdk:1.0.0")
+    implementation("io.ktor:ktor-client-core:$ktor_version")
+    implementation("io.ktor:ktor-client-cio:$ktor_version")
+    implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
+    implementation("io.ktor:ktor-client-logging:$ktor_version")
+    implementation("io.ktor:ktor-client-cio-jvm:2.3.7")
+    implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
     testImplementation("io.ktor:ktor-server-tests-jvm")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
     testImplementation("io.ktor:ktor-server-tests:$ktor_version")

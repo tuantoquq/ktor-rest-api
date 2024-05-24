@@ -28,4 +28,7 @@ object Environments {
     // redis configurations
     val redisHost: String = envConfig.getString("redis.host")
     val redisPort: Int = envConfig.getInt("redis.port")
+
+    // mailer configurations
+    val mailerApiKey: String = envConfig.getString("application.mailer.apiKey")
 }
